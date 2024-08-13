@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#todo-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#input-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+input[type="date"],
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Table Styles */
+#task-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#task-table th,
+#task-table td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+#task-column,
+#done-column {
+    min-height: 50px;
+}
+
+div {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+div:hover {
+    transform: scale(1.02);
+    background-color: #d5e7f3;
+}
+
+/* Add spacing between buttons and content */
+button {
+    margin-left: 10px;
+}
+
+#task-column div,
+#done-column div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+#task-column div {
+    border-left-color: #3498db;
+}
+
+#done-column div {
+    border-left-color: #2ecc71;
+}
+
+#done-column button {
+    background-color: #e74c3c;
+    margin-left: 10px; /* Add margin to separate buttons from content */
+}
+
+#done-column button:hover {
+    background-color: #c0392b;
+}
+
+#done-column button + button {
+    background-color: #f39c12;
+}
+
+#done-column button + button:hover {
+    background-color: #e67e22;
+}
